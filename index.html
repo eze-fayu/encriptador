@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Ezequiel Faiella">
+    <title>Encriptador</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+    
+	<header>
+        <img src="img/Logo.svg" alt="Logo Alura">
+    </header>
+    
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<h1 class="text-primary">
+				Encriptador
+			</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8">
+			<div class="card bg-default">
+				<h5 class="card-header">
+					Texto a Encriptar
+				</h5>
+				<div class="card-body">
+					<p class="card-text">
+						<textarea name="textoaprocesar" id="ingreso" cols="40" rows="5" required></textarea>
+					</p>
+				</div>
+				<!-- <div class="card-footer">
+					Card footer
+				</div> -->
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<h5 class="card-header">
+					Texto Descifrado
+				</h5>
+				<div class="card-body">
+					<p class="card-text">
+                	<textarea name="salida" id="egreso" cols="40" rows="5" readonly></textarea>
+					</p>
+				</div>
+				<!-- <div class="card-footer">
+					Card footer
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="btn-group" role="group">
+				<button class="btn btn-primary" id="encriptar" onclick="encriptar()">Encriptar</button>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="btn-group" role="group">
+                <button class="btn btn-primary" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="btn-group" role="group">
+            	<button class="btn btn-primary" id="button" onclick="copiar()">Copiar</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<p>	Desarrollado por <strong>Ezequiel Faiella</strong>
+	</p>
+</footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
